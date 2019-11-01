@@ -9,6 +9,12 @@ export default (state = initialState, action )=>{
                 ...state,
                 loading : action.payload
             }
+        case 'INITIAL_LOAD':
+            return{
+                ...state,
+                isLoggedIn : action.payload1,
+                token : action.payload2
+            }
         default:
             return state;
     }

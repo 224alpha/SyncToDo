@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { loading } from "../actions/common";
+import { Loading } from "../actions/common";
 import Sliderr from "./slider";
 import logo from "./main.jpg";
 import "./landing.css";
+import GoogleLoginFunc from "./googleLogin";
 
 
 class Landing extends Component {
@@ -13,8 +14,10 @@ class Landing extends Component {
                 <div className="loading-page-inner">
                     <div className="logo-holder">
                         <img src={logo} alt="Logo" className="logo-main"/>
+                        <h3>SyncToDo</h3>
                     </div>
                     <Sliderr />
+                    <GoogleLoginFunc />
                 </div>
             </div>
         )
@@ -29,5 +32,5 @@ const mapStateToProps = state => ({
   
   
 export default connect(mapStateToProps,{
-    loading
+    Loading
 })(Landing);

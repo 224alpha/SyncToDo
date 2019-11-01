@@ -3,7 +3,20 @@
 }
 .logo-holder{
     width:100%;
+    padding-top: 20px;
+}
+.logo-holder img, .logo-holder h3{
+    display: inline;
+}
+.logo-holder h3{
+    color: #05386B;
+    font-size: 25px;
 }
 .logo-main{
     width:60px;
+}
+.google-login-holder{
+    width:100%;
+    text-align: center;
+    padding-top: 25px
 }

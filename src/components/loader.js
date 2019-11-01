@@ -1,7 +1,7 @@
 import React from 'react';
 import "./loader.css";
 import { connect } from "react-redux";
-import { loading } from "../actions/common";
+import { Loading } from "../actions/common";
 
 function Loader(props) {
     let c = "LoaderWrapper";
@@ -30,6 +30,6 @@ const mapStateToProps = state => ({
   
   
 export default connect(mapStateToProps,{
-    loading
+    Loading
 })(Loader);
 

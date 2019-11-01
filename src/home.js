@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import Landing from "./components/landing";
 import "./home.css";
+import { initialLoad } from "./actions/common";
 
 class Home extends Component{
-    
+
+    componentWillMount(){
+        this.props.initialLoad();
+    }
+
     componentDidMount(){
 
     }
@@ -24,5 +29,5 @@ const mapStateToProps = state => ({
   
   
 export default connect(mapStateToProps,{
-
+    initialLoad
 })(Home);
