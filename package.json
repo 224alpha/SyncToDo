@@ -1,0 +1,31 @@
+{
+  "name": "synctodo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/224alpha/SyncToDo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/224alpha/SyncToDo/issues"
+  },
+  "homepage": "https://github.com/224alpha/SyncToDo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.21.2",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
